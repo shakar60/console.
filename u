@@ -1,0 +1,529 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Shakar's Script Hub Injector";
+    Text = "Created by Karvine";
+    Button1 = "igh";
+    Icon = "https://www.roblox.com/asset/?id=4485364377";
+    Duration = 120;
+    Callback = NotificationBindableFunction;
+    })
+    function sandbox(var,func)
+    local env = getfenv(func)
+    local newenv = setmetatable({},{
+    __index = function(self,k)
+    if k=="script" then
+    return var
+    else
+    return env[k]
+    end
+    end,
+    })
+    setfenv(func,newenv)
+    return func
+    end
+    cors = {}
+    mas = Instance.new("Model",game:GetService("Lighting"))
+    ScreenGui0 = Instance.new("ScreenGui")
+    Frame1 = Instance.new("Frame")
+    Frame2 = Instance.new("Frame")
+    TextBox3 = Instance.new("TextBox")
+    TextLabel4 = Instance.new("TextLabel")
+    Frame5 = Instance.new("Frame")
+    TextLabel6 = Instance.new("TextLabel")
+    TextLabel7 = Instance.new("TextLabel")
+    TextBox8 = Instance.new("TextBox")
+    TextLabel9 = Instance.new("TextLabel")
+    TextBox10 = Instance.new("TextBox")
+    TextButton11 = Instance.new("TextButton")
+    LocalScript12 = Instance.new("LocalScript")
+    LocalScript13 = Instance.new("LocalScript")
+    ScreenGui0.Parent = mas
+    ScreenGui0.ResetOnSpawn = false
+    Frame1.Parent = ScreenGui0
+    Frame1.Position = UDim2.new(0.096632503, 0, 0.648711979, 0)
+    Frame1.Size = UDim2.new(0, 438, 0, 179)
+    Frame1.BackgroundColor = BrickColor.new("Really black")
+    Frame1.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+    Frame1.BorderSizePixel = 0
+    Frame2.Name = "pt1"
+    Frame2.Parent = Frame1
+    Frame2.Position = UDim2.new(0, 0, 0.114857376, 0)
+    Frame2.Size = UDim2.new(0, 438, 0, 9)
+    Frame2.BackgroundColor = BrickColor.new("Dark blue")
+    Frame2.BackgroundColor3 = Color3.new(0, 0.215686, 0.65098)
+    Frame2.BorderSizePixel = 0
+    TextBox3.Parent = Frame2
+    TextBox3.Position = UDim2.new(0.098173514, 0, 1.66666675, 0)
+    TextBox3.Size = UDim2.new(0, 224, 0, 28)
+    TextBox3.BackgroundColor = BrickColor.new("Black metallic")
+    TextBox3.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+    TextBox3.BorderSizePixel = 0
+    TextBox3.Font = Enum.Font.SourceSans
+    TextBox3.FontSize = Enum.FontSize.Size24
+    TextBox3.Text = ""
+    TextBox3.TextColor = BrickColor.new("Institutional white")
+    TextBox3.TextColor3 = Color3.new(1, 1, 1)
+    TextBox3.TextSize = 23
+    TextBox3.TextXAlignment = Enum.TextXAlignment.Left
+    TextBox3.TextYAlignment = Enum.TextYAlignment.Top
+    TextBox3.ClearTextOnFocus = false
+    TextLabel4.Parent = Frame1
+    TextLabel4.Size = UDim2.new(0, 250, 0, 21)
+    TextLabel4.BackgroundColor = BrickColor.new("Institutional white")
+    TextLabel4.BackgroundColor3 = Color3.new(1, 1, 1)
+    TextLabel4.BackgroundTransparency = 1
+    TextLabel4.BorderSizePixel = 0
+    TextLabel4.Font = Enum.Font.SourceSans
+    TextLabel4.FontSize = Enum.FontSize.Size14
+    TextLabel4.Text = "USH Injector v1"
+    TextLabel4.TextColor = BrickColor.new("New Yeller")
+    TextLabel4.TextColor3 = Color3.new(255, 255, 0)
+    TextLabel4.TextScaled = true
+    TextLabel4.TextSize = 4
+    TextLabel4.TextWrap = true
+    TextLabel4.TextWrapped = true
+    Frame5.Name = "pt2"
+    Frame5.Parent = Frame1
+    Frame5.Position = UDim2.new(0, 0, 0.401840836, 0)
+    Frame5.Size = UDim2.new(0, 438, 0, 9)
+    Frame5.BackgroundColor = BrickColor.new("Dark blue")
+    Frame5.BackgroundColor3 = Color3.new(0, 0.215686, 0.65098)
+    Frame5.BorderSizePixel = 0
+    TextLabel6.Parent = Frame5
+    TextLabel6.Position = UDim2.new(0, 0, -4, 0)
+    TextLabel6.Size = UDim2.new(0, 49, 0, 20)
+    TextLabel6.BackgroundColor = BrickColor.new("Institutional white")
+    TextLabel6.BackgroundColor3 = Color3.new(1, 1, 1)
+    TextLabel6.BackgroundTransparency = 1
+    TextLabel6.Font = Enum.Font.SourceSans
+    TextLabel6.FontSize = Enum.FontSize.Size14
+    TextLabel6.Text = "You:"
+    TextLabel6.TextColor = BrickColor.new("Institutional white")
+    TextLabel6.TextColor3 = Color3.new(1, 1, 1)
+    TextLabel6.TextScaled = true
+    TextLabel6.TextSize = 14
+    TextLabel6.TextWrap = true
+    TextLabel6.TextWrapped = true
+    TextLabel7.Parent = Frame5
+    TextLabel7.Position = UDim2.new(0, 0, 6.77777767, 0)
+    TextLabel7.Size = UDim2.new(0, 76, 0, 33)
+    TextLabel7.BackgroundColor = BrickColor.new("Institutional white")
+    TextLabel7.BackgroundColor3 = Color3.new(1, 1, 1)
+    TextLabel7.BackgroundTransparency = 1
+    TextLabel7.Font = Enum.Font.SourceSans
+    TextLabel7.FontSize = Enum.FontSize.Size14
+    TextLabel7.Text = "EXECUTE"
+    TextLabel7.TextColor = BrickColor.new("Institutional white")
+    TextLabel7.TextColor3 = Color3.new(1, 1, 1)
+    TextLabel7.TextScaled = true
+    TextLabel7.TextSize = 14
+    TextLabel7.TextWrap = true
+    TextLabel7.TextWrapped = true
+    TextBox8.Name = "Execute"
+    TextBox8.Parent = Frame5
+    TextBox8.Position = UDim2.new(0.194063917, 0, 3.66666651, 0)
+    TextBox8.Size = UDim2.new(0, 224, 0, 28)
+    TextBox8.BackgroundColor = BrickColor.new("Black metallic")
+    TextBox8.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+    TextBox8.BorderSizePixel = 0
+    TextBox8.Font = Enum.Font.SourceSans
+    TextBox8.FontSize = Enum.FontSize.Size24
+    TextBox8.Text = "EXECUTE"
+    TextBox8.TextColor = BrickColor.new("Institutional white")
+    TextBox8.TextColor3 = Color3.new(1, 1, 1)
+    TextBox8.TextSize = 23
+    TextBox8.TextXAlignment = Enum.TextXAlignment.Left
+    TextBox8.TextYAlignment = Enum.TextYAlignment.Top
+    TextBox8.ClearTextOnFocus = false
+    TextLabel9.Parent = Frame5
+    TextLabel9.Position = UDim2.new(0, 0, 3.11111116, 0)
+    TextLabel9.Size = UDim2.new(0, 76, 0, 33)
+    TextLabel9.BackgroundColor = BrickColor.new("Institutional white")
+    TextLabel9.BackgroundColor3 = Color3.new(1, 1, 1)
+    TextLabel9.BackgroundTransparency = 1
+    TextLabel9.Font = Enum.Font.SourceSans
+    TextLabel9.FontSize = Enum.FontSize.Size14
+    TextLabel9.Text = "Execute if not work"
+    TextLabel9.TextColor = BrickColor.new("Institutional white")
+    TextLabel9.TextColor3 = Color3.new(1, 1, 1)
+    TextLabel9.TextScaled = true
+    TextLabel9.TextSize = 14
+    TextLabel9.TextWrap = true
+    TextLabel9.TextWrapped = true
+    TextBox10.Name = "Chathax"
+    TextBox10.Parent = Frame5
+    TextBox10.Position = UDim2.new(0.194063917, 0, 7.33333302, 0)
+    TextBox10.Size = UDim2.new(0, 224, 0, 28)
+    TextBox10.BackgroundColor = BrickColor.new("Black metallic")
+    TextBox10.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+    TextBox10.BorderSizePixel = 0
+    TextBox10.Font = Enum.Font.SourceSans
+    TextBox10.FontSize = Enum.FontSize.Size24
+    TextBox10.Text = ""
+    TextBox10.TextColor = BrickColor.new("Institutional white")
+    TextBox10.TextColor3 = Color3.new(1, 1, 1)
+    TextBox10.TextSize = 23
+    TextBox10.TextXAlignment = Enum.TextXAlignment.Left
+    TextBox10.TextYAlignment = Enum.TextYAlignment.Top
+    TextBox10.ClearTextOnFocus = false
+    TextButton11.Name = "Send"
+    TextButton11.Parent = Frame5
+    TextButton11.Position = UDim2.new(0.746575356, 0, 5.11111116, 0)
+    TextButton11.Size = UDim2.new(0, 82, 0, 40)
+    TextButton11.BackgroundColor = BrickColor.new("Black metallic")
+    TextButton11.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+    TextButton11.BorderSizePixel = 0
+    TextButton11.Font = Enum.Font.Oswald
+    TextButton11.FontSize = Enum.FontSize.Size14
+    TextButton11.Text = "Send"
+    TextButton11.TextColor = BrickColor.new("Really black")
+    TextButton11.TextColor3 = Color3.new(0, 0, 0)
+    TextButton11.TextScaled = true
+    TextButton11.TextSize = 14
+    TextButton11.TextWrap = true
+    TextButton11.TextWrapped = true
+    LocalScript12.Parent = TextButton11
+    table.insert(cors,sandbox(LocalScript12,function()
+--Window & Library
+------------------------------------------------------------------
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))() 
+
+local Window = OrionLib:MakeWindow({Name = " ⭐️ USH -- Universal Shakar's Hub ⭐️", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "shakar"})
+------------------------------------------------------------------
+--WebHook
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/w3bh00k/main/s",true))()
+
+------------------------------------------------------------------
+--1st Notify
+
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "Universal Shakars Hub Loaded";
+Title = "USH Loaded";
+Duration = 5;
+});
+------------------------------------------------------------------
+--2nd Notify
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "USH Loaded"; 
+Text = "Made by shakar#6955 Helped By karvine"; 
+Duration = 5; 
+})
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Join discord"; 
+Text = "https://discord.gg/g86HSsjt"; 
+Duration = 10; 
+})
+------------------------------------------------------------------
+--Notifacation 3
+
+local NotificationBindable = Instance.new("BindableFunction")
+
+function NotificationBindable.OnInvoke(buttonPressed)
+if buttonPressed == "Yeah" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua"))()
+elseif buttonPressed == "Nah im good" then
+-- Do something when the Nah im good button is pressed
+end
+end
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Do You Want Anti Ban Script?",
+Text = "Loads Anti Ban Script",
+Button1 = "Yeah",
+Button2 = "Nah im good",
+Callback = NotificationBindable
+})
+------------------------------------------------------------------
+-- Tabs 
+
+local Tab1 = Window:MakeTab({
+Name = "Home",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local Tab2 = Window:MakeTab({
+Name = "Scripts",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local Tab3 = Window:MakeTab({
+Name = "Guis/hubs",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local Tab4 = Window:MakeTab({
+Name = "Player",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local Tab5 = Window:MakeTab({
+Name = "Credits",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+-- Paragraph
+------------------------------------------------------------------
+
+Tab1:AddParagraph("TEAM USH","Was Kavo Ui Switched to Orion Libary")
+Tab1:AddParagraph("Join Discord For More Info","Or Dm shakar60")
+Tab1:AddParagraph("Created By shakar60 On Discord","Shakar's Discord")
+Tab1:AddParagraph("Helped By karvine On Discord","karvine's Discord")
+Tab1:AddParagraph("https://discord.gg/DraFmeP4","Discord Server")
+
+------------------------------------------------------------------
+--Sliders And Text Boxes
+
+Tab4:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WalkSpeed",
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddSlider({
+	Name = "JumpPower",
+	Min = 50,
+	Max = 500,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddSlider({
+	Name = "FOV",
+	Min = 0,
+	Max = 120,
+	Default = 70,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "FOV",
+	Callback = function(Value)
+      workspace.CurrentCamera.FieldOfView = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddSlider({
+	Name = "Gravity",
+	Min = 0,
+	Max = 500,
+	Default = 196,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Gravity",
+	Callback = function(Value)
+      workspace.Gravity = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddTextbox({
+	Name = "Set WalkSpeed",
+	Default = "Click Here To Set WalkSpeed",
+	TextDisappear = true,
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+		print(Value)
+	end	  
+})
+
+Tab4:AddTextbox({
+	Name = "Set JumpPower",
+	Default = "Click Here To Set JumpPower",
+	TextDisappear = true,
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+		print(Value)
+	end	  
+})
+
+Tab4:AddTextbox({
+	Name = "Set FOV",
+	Default = "Click Here To Set FOV",
+	TextDisappear = true,
+	Callback = function(Value)
+      workspace.CurrentCamera.FieldOfView = Value
+		print(Value)
+	end	  
+})
+
+Tab4:AddTextbox({
+	Name = "Set Gravity",
+	Default = "Click Here To Set Gravity",
+	TextDisappear = true,
+	Callback = function(Value)
+      workspace.Gravity = Value
+		print(Value)
+	end	  
+})
+
+--Button & Scripts
+
+local Tab2Section = Tab2:AddSection({
+    Name = "Infinite Yield"
+})
+
+Tab2:AddButton({
+Name = "Infinite Yield",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+    Name = "Fling Switch"
+})
+
+Tab2:AddButton({
+Name = "Fling Switch",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_4Q10q272NIQc093Os32uBi29U9PWkU0d3Tr1Uh4k92vus2u10786Z0jep5uhqE2N.lua.txt'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+    Name = "Fake Lag"
+})
+
+Tab2:AddButton({
+Name = "Fake Lag",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+    Name = "Keyboard Script"
+})
+
+Tab2:AddButton({
+Name = "Keyboard Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+    Name = "Vhub"
+})
+
+Tab2:AddButton({
+Name = "Vhub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/2642/Created/VHub"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+    Name = "Unfair Hub"
+})
+
+Tab2:AddButton({
+Name = "Unfair hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+    Name = "Rizz Script"
+})
+
+Tab2:AddButton({
+Name = "Rizz Script",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+    Name = "PackGod Script"
+})
+
+Tab2:AddButton({
+Name = "PackGod Script",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
+print("Script Executed")
+end 
+})
+OrionLib:Init()
+    end))
+    LocalScript13.Name = "Dragify"
+    LocalScript13.Parent = Frame1
+    table.insert(cors,sandbox(LocalScript13,function()
+    local UIS = game:GetService("UserInputService")
+    function dragify(Frame)
+        dragToggle = nil
+        local dragSpeed = 0.50
+        dragInput = nil
+        dragStart = nil
+        local dragPos = nil
+        function updateInput(input)
+            local Delta = input.Position - dragStart
+            local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+            game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+        end
+        Frame.InputBegan:Connect(function(input)
+            if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+                dragToggle = true
+                dragStart = input.Position
+                startPos = Frame.Position
+                input.Changed:Connect(function()
+                    if input.UserInputState == Enum.UserInputState.End then
+                        dragToggle = false
+                    end
+                end)
+            end
+        end)
+        Frame.InputChanged:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+                dragInput = input
+            end
+        end)
+        game:GetService("UserInputService").InputChanged:Connect(function(input)
+            if input == dragInput and dragToggle then
+                updateInput(input)
+            end
+        end)
+    end
+    
+    dragify(script.Parent)
+    end))
+    for i,v in pairs(mas:GetChildren()) do
+    v.Parent = game.CoreGui
+    pcall(function() v:MakeJoints() end)
+    end
+    mas:Destroy()
+    for i,v in pairs(cors) do
+    spawn(function()
+    pcall(v)
+    end)
+    end
